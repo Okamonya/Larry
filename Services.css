@@ -1,0 +1,358 @@
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background-color: skyblue;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    position: fixed;
+    padding: 0 10px;
+    height: 80px;
+    z-index: 1;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 200;
+    text-decoration: none;
+    margin: 10px;
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+    border-width: 6px;
+    border-color: #fff;
+    border-top: double;
+    border-right: double;
+    border-bottom: double cyan;
+    border-left: double cyan;
+
+}
+
+.navbar .logo a span {
+    color: cyan;
+
+}
+
+.navbar .menu-links ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    padding-right: -10rem;
+}
+
+ul {
+    display: flex;
+}
+
+.navbar .menu-links li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 800;
+    margin: 20px;
+    margin-top: 6px;
+    margin-bottom: 1px;
+    transition: color 0.3 ease;
+    display: block;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-color: transparent;
+    border-style: solid;
+    padding: 5px;
+    border-radius: 50px;
+
+}
+
+li a {
+    color: rgb(150, 2, 59);
+}
+
+.navbar .menu li a:hover {
+    color: cyan;
+    border-color: cyan;
+    background-size: cover;
+    transition: ease-in 0.5s, ease-out 0.5s;
+}
+
+.navbar .menu-links li:hover {
+    box-shadow: 0px 3px 6px cyan;
+}
+
+/* Scrolling styling */
+.scrolling-active {
+    padding: 6px 0;
+    background-color: darkcyan;
+    transition: ease 0.5s;
+    position: fixed;
+    display: flex;
+    z-index: 10;
+}
+
+.navbar .scrolling-active {
+    position: fixed;
+    display: flex;
+    z-index: 2%;
+}
+
+/* service1 */
+.service1 .content-services {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.service1 .content-services .service-img {
+    height: 400px;
+    width: 600px;
+    object-fit: cover;
+    padding: 0 50px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.service1 .content-services .content {
+    justify-content: center;
+    align-items: center;
+    padding: 0 100PX;
+}
+
+/* service 2 */
+.service2 .content-services {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+}
+
+.service2 .content-services .service-img {
+    height: 400px;
+    width: 600px;
+    object-fit: cover;
+    padding: 0 50px;
+}
+
+.service2 .content-services .content {
+    justify-content: center;
+    align-items: center;
+    padding: 0 100PX;
+}
+
+/* service 3 */
+.service3 .content-services {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.service3 .content-services .service-img {
+    height: 400px;
+    width: 600px;
+    object-fit: cover;
+    padding: 0 50px;
+}
+
+.service3 .content-services .content {
+    justify-content: center;
+    align-items: center;
+    padding: 0 100PX;
+}
+
+/* Contact Me Styling */
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .contact-content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact-content .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    margin-top: -20px;
+    padding-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.contact-content .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+}
+
+.contact-content .title::after {
+    content: "Get in touch";
+    position: absolute;
+    bottom: -13px;
+    font-size: 17px;
+    color: cyan;
+    left: 50%;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+.contact .contact-content p {
+    font-weight: 300;
+    color: #000;
+}
+
+.contact-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contact-container .contactinfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container .contactinfo .box-contact {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contact-container .contactinfo .box-contact .icon-contact {
+    min-width: 60px;
+    height: 60px;
+    background: rgb(183, 224, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.contact-container .contactinfo .box-contact .contact-text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contact-container .contactinfo .box-contact .contact-text h5 {
+    font-weight: 800;
+    color: teal;
+}
+
+.contactform {
+    width: 30%;
+    padding: 40px;
+    background: rgb(183, 224, 224);
+    border-radius: 10%;
+}
+
+h6 {
+    font-size: 30px;
+    color: teal;
+    font-weight: 500;
+}
+
+.contactform .inputbox {
+    position: relative;
+    width: 100%;
+    margin: 10px;
+}
+
+.contactform .inputbox input,
+textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid teal;
+    resize: none;
+}
+
+.contactform .inputbox span {
+    position: absolute;
+    left: 0;
+    top: -0px;
+    padding: 2px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: teal;
+}
+
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+textarea:focus ~ span,
+textarea:valid ~ span {
+    color: teal;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactform .inputbox input[type="submit"] {
+    width: 100px;
+    background: rgb(9, 83, 126);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+/* Social */
+.social {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    position: fixed;
+    z-index: 100;
+}
+
+.social ul {
+    padding: initial;
+}
+
+.social ul li {
+    height: 30px;
+    width: 20px;
+    list-style-type: none;
+    padding-left: 12px;
+    padding-top: 6px;
+    margin-top: 5px;
+    color: #fff;
+}
+
+.linkedin {
+    background: #007bb5;
+}
+
+.social ul li:hover {
+    padding-left: 30px;
+    width: 80%;
+    transition: 1s;
+}
